@@ -61,6 +61,7 @@ export class ShoppingCartComponent implements OnInit {
   public purchase(): void {    
     this.onPurchase.emit(this.productList);
     this.productList = [];
+    this.totalPrice = 0;
     this.cRef.detectChanges();
   }
 }
