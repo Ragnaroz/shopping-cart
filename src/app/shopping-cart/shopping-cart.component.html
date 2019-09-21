@@ -1,0 +1,34 @@
+<div class="products-component">
+    <div class="card products-component">
+        <h5 class="card-header">Shopping cart</h5>
+        <div class="card-body products-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="width35" scope="col">Product</th>
+                        <th class="width30" scope="col">Vendor</th>
+                        <th class="width10" scope="col">Quantity</th>
+                        <th class="width10" scope="col">Price</th>
+                        <th class="width15" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of productList; let i = index">
+                        <td class="width35">{{product.name}}</td>
+                        <td class="width30">{{product.vendor}}</td>
+                        <td class="width10">{{product.quantity}}</td>
+                        <td class="width10">{{product.price}}$</td>
+                        <td class="width15"><button (click)="remove(product, i)" class="btn btn-secondary">Remove</button></td>
+                    </tr>
+                </tbody>
+                <tfoot class="footer">
+                    <tr>
+                        <th>Total price: {{totalPrice}}$ 
+                            <button id="purchaseButton" (click)="purchase()" class="btn btn-secondary">Purchase</button>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>

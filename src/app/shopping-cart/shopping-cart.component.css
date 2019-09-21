@@ -1,0 +1,38 @@
+.width35 {
+    width: 35%;
+}
+
+.width10 {
+    width: 10%;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.width15 {
+    width: 15%;
+}
+
+.quantity {
+    width: 50px;
+}
+
+.products-component {
+    height: 60vh;
+}
+
+.products-body {
+    overflow: auto;
+}
+
+.footer {
+    right: 0;
+    position: absolute;
+    top: 52vh;
+}
+
+.card .card-header {
+    background-color: #343a40;
+    color: white;
+}
