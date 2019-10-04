@@ -37,8 +37,8 @@ export class ShoppingCartComponent implements OnInit {
     } else {
       let newProduct: Product = new Product(product.name, product.price, product.vendor, product.quantity);
       this.productList.push(newProduct);
-      this.updateTotalPrice();
     }
+    this.updateTotalPrice();
   }
   
   private updateTotalPrice(): void {
